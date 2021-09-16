@@ -6,7 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
-    static private WebDriver driver;
+
+    public static WebDriver driver;
 
     public static void main(String[] args) {
         System.setProperty(

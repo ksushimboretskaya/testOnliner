@@ -3,6 +3,7 @@ package pages;
 import base.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends TestBase {
 
@@ -17,6 +18,10 @@ public class HomePage extends TestBase {
 
     @FindBy(xpath = "//span[contains(@class,'b-main-navigation__text')and text() = 'Услуги']")
     WebElement servicesLink;
+
+    public HomePage() {
+        PageFactory.initElements(driver, this);
+    }
 
     public boolean verifyHomePageLogo() {
         return logo.isDisplayed();
