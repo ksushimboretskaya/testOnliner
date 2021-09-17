@@ -17,11 +17,11 @@ public class ServicesPage extends TestBase {
         PageFactory.initElements(driver,this);
     }
 
-    private boolean verifyServicesPageTittle() {
+    public boolean verifyServicesPageTittle() {
         return servicePagesTittle.isDisplayed();
     }
 
-    private String verifyOrderLabel(){
+    public String verifyOrderLabel(){
         return orderLabel.getText();
     }
 }
