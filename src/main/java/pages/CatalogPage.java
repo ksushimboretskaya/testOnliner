@@ -17,11 +17,11 @@ public class CatalogPage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    private boolean verifyCatalogPageTittle() {
+    public boolean verifyCatalogPageTittle() {
         return catalogPageTittle.isDisplayed();
     }
 
-    private boolean verifyElectronicsLink() {
+    public boolean verifyElectronicsLink() {
         return electronicsLink.isDisplayed();
     }
 }

@@ -39,10 +39,14 @@ public class HomePage extends TestBase {
         return  servicesLink.isDisplayed();
     }
 
-    public ServicesPage clickOnServicesPageLink() {
+    public void clickOnServicesPageLink() {
         servicesLink.click();
-        return new ServicesPage();
+        new ServicesPage();
     }
 
+    public CatalogPage clickOnCatalogsPageLink() {
+        catalogLink.click();
+        return new CatalogPage();
+    }
 
 }
