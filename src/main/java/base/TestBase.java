@@ -9,7 +9,7 @@ public class TestBase {
 
     public static WebDriver driver;
 
-    public static void main(String[] args) {
+    public static void initialization() {
         System.setProperty(
                 "webdriver.chrome.driver",
                 "src/main/resources/chromedriver.exe");

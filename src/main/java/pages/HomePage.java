@@ -35,13 +35,8 @@ public class HomePage extends TestBase {
         return catalogLink.isDisplayed();
     }
 
-    public CatalogPage clickOnCatalogLink() {
-        catalogLink.click();
-        return new CatalogPage();
+    public boolean verifyServicesLink() {
+        return  servicesLink.isDisplayed();
     }
 
-    public ServicesPage clickOnServicesLink() {
-        servicesLink.click();
-        return new ServicesPage();
-    }
 }
