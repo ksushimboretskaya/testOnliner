@@ -23,18 +23,23 @@ public class ServicesPageTest extends TestBase {
         homepage.clickOnServicesPageLink();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1 , description = "Verify services page tittle")
     public void verifyServicesPageTittle() {
         Assert.assertTrue(servicesPage.verifyServicesPageTittle(), "Services page tittle isn't displayed");
     }
 
-    @Test(priority = 2)
-    public void verifyOrderLabel() {
-        Assert.assertEquals(servicesPage.verifyOrderLabel(), "Мои заказы");
+    @Test(priority = 2, description = "Verify order label", dataProvider = "order-label")
+    public void verifyOrderLabel(String expectedOrderLabel) {
+        Assert.assertEquals(servicesPage.verifyOrderLabel(), expectedOrderLabel);
     }
 
     @AfterClass
     public void tearDown() {
         driver.quit();
+    }
+
+    @DataProvider(name="order-label")
+    public Object[][] orderLabel() {
+        return new Object[][]{{"Мои заказы"}};
     }
 }

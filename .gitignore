@@ -1,2 +1,10 @@
 # Project exclude paths
 /target/
+.idea
+.idea/
+.shelf
+/*.iml
+/*.ipr
+/*.iws
+/out
+/out/*.*

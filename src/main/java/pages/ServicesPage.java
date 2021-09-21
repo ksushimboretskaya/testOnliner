@@ -1,11 +1,11 @@
 package pages;
 
-import base.TestBase;
+import base.Base;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ServicesPage extends TestBase {
+public class ServicesPage extends Base {
 
     @FindBy(xpath = "//div[contains(@class,'service-header__title_huge') and text()='Заказы']")
     WebElement servicePagesTittle;

@@ -1,11 +1,11 @@
 package pages;
 
-import base.TestBase;
+import base.Base;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CatalogPage extends TestBase {
+public class CatalogPage extends Base {
 
     @FindBy(xpath = "//*[contains (@class,'catalog-navigation__title') and text() ='Каталог']")
     WebElement catalogPageTittle;

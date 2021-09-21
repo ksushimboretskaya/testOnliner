@@ -19,12 +19,12 @@ public class CatalogsPageTest extends TestBase {
         homePage.clickOnCatalogsPageLink();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, description="Verify catalog page tittle")
     public void verifyCatalogPageTittle() {
         Assert.assertTrue(catalogPage.verifyCatalogPageTittle(), "Tittle isn't displayed");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, description = "Verify electronics link")
     public void verifyElectronicsLink() {
         Assert.assertTrue(catalogPage.verifyElectronicsLink(), "Electronics link isn't displayed");
     }
